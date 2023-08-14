@@ -45,3 +45,11 @@ for (let item of allLi) {
 
 // elementNode, textNode */
 
+
+// const parent = document.querySelector(".grandparent");
+// const children = document.children;
+
+// const gp = document.querySelector('.grandparent');
+// const child = gp.querySelectorAll(".item");
+// console.log(child);
+
