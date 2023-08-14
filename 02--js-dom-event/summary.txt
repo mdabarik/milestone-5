@@ -1,0 +1,22 @@
+What are events?
+
+some important event:
+onclick, onchange, onmouseover, onkeydown, onload, onblur
+
+2 ways of handling js events?
+1. by using an event handler
+2. by adding event listener
+
+event handler (function/callback function)
+addEventListener, target, type, callback function
+
+
+Event bubbling
+Event stop propagation
+stop immediate propagation
+
+Event delegate (delegation):
+Event delegation is basically a pattern to handle events efficiently.
+Instead of adding an event listener to each and every similar element, 
+we can add an event listener to a parent element and call an even on 
+a particular target using the target property of the event object.
