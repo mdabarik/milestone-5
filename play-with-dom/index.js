@@ -53,3 +53,47 @@ for (let item of allLi) {
 // const child = gp.querySelectorAll(".item");
 // console.log(child);
 
+// const child = document.querySelector(".item");
+// const parent = child.parentElement;
+// const gparent = parent.parentElement
+// const ggparent = gparent.parentElement;
+// console.log(ggparent);
+
+// child to grand parent
+// const child = document.querySelector(".item");
+// const gp = child.closest(".grandparent");
+// console.log(gp);
+
+// sibling relationship
+// const parent1 = document.getElementById("parent-one");
+// const parent2 = parent1.nextElementSibling;
+// console.log(parent2);
+
+// const chacha = document.getElementById("parent-one").nextElementSibling;
+// console.log(chacha);
+
+// const chacha = document.getElementById("parent-two");
+// const babba = chacha.previousElementSibling;
+// console.log(babba);
+
+const h3 = document.createElement("h3");
+h3.innerText = "This is heading 3 created using createElement";
+
+const container = document.querySelector(".grandparent");
+container.appendChild(h3);
+
+const div = document.createElement("div");
+div.innerHTML = `
+<h1> H1 </h1>
+<h2> h2 </h2>
+`;
+
+// adding class
+div.classList.add("new-class-name");
+div.setAttribute("id", "new-id");
+div.setAttribute("title", "new title");
+div.removeAttribute("title");
+
+
+// remove child
+container.insertBefore(div, document.getElementById("parent-two"));
